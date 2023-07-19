@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html>
 
+<!-- TODO fix h1 vertical alignment, add text, name items -->
+
 <head>
     <style>
         .grid-container {
             display: grid;
-            /* grid-template: 20% 40% 40% 40% / auto auto auto; */
-            grid-gap: 50px;
-            background-color: #2196F3;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1.5fr 4fr 4fr 1fr;
+            grid-gap: 35px;
             padding: 10px;
+            width: 95vw;
+            height: 95vh;
         }
 
         .grid-container>div {
-            background-color: rgba(255, 255, 255, 0.8);
+            border-style: solid;
+            border-width: 2px;
             padding: 20px;
         }
 
-        .header {
+        .item1 {
             grid-area: 1 / 1 / span 1 / span 3;
             text-align: center;
         }
 
-        .sectionheader {
+        .item2 {
             grid-area: 2 / 1 / span 1 / span 2;
         }
 
-        .contactus {
+        .item3 {
             grid-area: 2 / 3 / span 1 / span 1;
         }
 
         .item4 {
             grid-area: 3 / 1 / span 1 / span 1;
+            text-align: center;
         }
 
         .item5 {
             grid-area: 3 / 2 / span 1 / span 1;
+            text-align: center;
         }
 
         .item6 {
             grid-area: 3 / 3 / span 1 / span 1;
+            text-align: center;
         }
 
         .item7 {
             grid-area: 4 / 1 / span 1 / span 3;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="header">
-            <h4>Main Header</h4>
+        <div class="item1">
+            <h1 style="display: inline;">Main Header</h1>
         </div>
-        <div class="sectionheader">
+        <div class="item2">
             <h5>Section Header</h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper sit amet quam a mollis. Phasellus
             eleifend erat odio, rutrum fringilla erat tincidunt nec. Sed hendrerit sem suscipit mauris vestibulum
@@ -60,14 +69,14 @@
             iaculis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, erat vitae scelerisque
             ornare, dolor turpis mattis lectus, vel iaculis massa nunc non urna.
         </div>
-        <div class="contactus">
+        <div class="item3">
             <h5>Contact Us</h5>
             <ul>
                 <li>Name</li>
                 <li>Address</li>
                 <li>Email</li>
                 <li>Phone number</li>
-              </ul>
+            </ul>
         </div>
         <div class="item4">4</div>
         <div class="item5">5</div>
