@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template: 20% 40% 40% 40% / auto auto auto; */
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: 1 / 1 / span 1 / span 3;
+            text-align: center;
+        }
+
+        .sectionheader {
+            grid-area: 2 / 1 / span 1 / span 2;
+        }
+
+        .contactus {
+            grid-area: 2 / 3 / span 1 / span 1;
+        }
+
+        .item4 {
+            grid-area: 3 / 1 / span 1 / span 1;
+        }
+
+        .item5 {
+            grid-area: 3 / 2 / span 1 / span 1;
+        }
+
+        .item6 {
+            grid-area: 3 / 3 / span 1 / span 1;
+        }
+
+        .item7 {
+            grid-area: 4 / 1 / span 1 / span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h4>Main Header</h4>
+        </div>
+        <div class="sectionheader">
+            <h5>Section Header</h5>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper sit amet quam a mollis. Phasellus
+            eleifend erat odio, rutrum fringilla erat tincidunt nec. Sed hendrerit sem suscipit mauris vestibulum
+            euismod. Vestibulum quis tortor id massa suscipit semper. Phasellus accumsan eros lacus, id molestie orci
+            iaculis vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, erat vitae scelerisque
+            ornare, dolor turpis mattis lectus, vel iaculis massa nunc non urna.
+        </div>
+        <div class="contactus">
+            <h5>Contact Us</h5>
+            <ul>
+                <li>Name</li>
+                <li>Address</li>
+                <li>Email</li>
+                <li>Phone number</li>
+              </ul>
+        </div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7 texttexttexttexttexttext</div>
+    </div>
+</body>
+
+</html>
